@@ -1,0 +1,67 @@
+/* إعدادات النصوص الأساسية */
+body {
+    direction: rtl;
+    font-family: 'Aref Ruqaa', serif;
+    color: #333;
+    margin: 0;
+    line-height: 1.8;
+    background-image: url('../image/qout_b1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: right center;
+    overflow-x: hidden;
+}
+
+blockquote {
+    direction: rtl;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+    color: black;
+    padding: 5px;
+}
+
+section {
+    margin-right: 22%;
+    width: 60%;
+    padding-left: 10%;
+}
+
+q {
+    direction: rtl;
+    display: block;
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-right: 4px solid #2C3E50;
+    color: #2C3E50;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+      background-position: 20%;
+    }
+    
+    blockquote {
+        font-size: 1.5em; 
+        padding: 10px;
+        width: 50%;
+        margin-right: 43%;
+    }
+
+    section {
+        font-size: 1em;
+        width:30%;  
+        margin-right: 46%;
+    }
+
+    q {
+        font-size: 1em; 
+        padding: 10px;
+        width: 160%;
+    }
+  }

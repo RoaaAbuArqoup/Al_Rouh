@@ -1,0 +1,93 @@
+body {
+    font-family: 'Aref Ruqaa', serif;
+    background: linear-gradient(90deg, white 70%, #ffdea0 37%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    direction: rtl;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+main img {
+    width: 350px;
+    height: auto;
+    border-radius: 0px;
+    padding-right: 17%;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    padding-top: 8%;
+}
+
+main h1 {
+    display: inline-block;
+    font-size: 40px;
+    color: #444;
+    text-align: center;
+    padding-right: 35px;
+    padding-top: 12%;
+}
+
+main h2 {
+    color: black;
+    padding: 3px;
+    font-size: 20px;
+    display: block;
+    text-align: right;
+    padding-right: 30px;
+}
+
+main p {
+    font-size: 20px;
+    color: black;
+    margin: 15px 0;
+    line-height: 1.6;
+    padding-right: 30px;
+}
+
+main a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+main h2:hover {
+    color: #8b5a2b;
+}
+
+.rating span {
+    font-size: 18px;
+    color: #ffa500;
+    padding: 30px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.actions .read {
+    background-color: #ffdea0;
+    color: black;
+}
+
+.actions .read:hover {
+    background-color: #8b5a2b;
+    color: white;
+}

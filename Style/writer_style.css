@@ -1,0 +1,186 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Aref Ruqaa", serif;
+    direction: rtl;
+}
+
+/* التنسيقات العامة */
+body {
+    background-color: #f8f5f2;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* تنسيق الهيدر */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffdea0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.header_container {
+    display: block;
+}
+
+header h1 {
+    color: #8b5a2b;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.معلومات_الكاتب {
+    padding: 15px;
+    border-radius: 8px;
+    border-right: 5px solid #ffdea0;
+    margin-top: 10px; 
+    text-align: right;
+}
+
+/* تنسيق وصف الكاتب */
+.وصف_الكاتب {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    line-height: 2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-right: 5px solid #ffdea0;
+}
+
+/* تنسيق قسم أعماله */
+.اعماله {
+    font-size: 1.8rem;
+    color: #8b5a2b;
+    margin: 30px 0 20px;
+    padding-right: 15px;
+    border-right: 5px solid #ffdea0;
+}
+
+/* تنسيق قائمة المؤلفات */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.container li {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+article {
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-10px);
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+figcaption h3 {
+    margin-top: 10px;
+    color: #8b5a2b;
+    text-align: center;
+}
+
+/* تنسيق رابط المزيد */
+main > a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #ffdea0;
+    color: black;
+    text-decoration: none; 
+    border-radius: 25px;
+    transition: all 0.3s;
+    font-weight: bold;
+    border: none; 
+}
+
+main > a:hover {
+    background-color: #8b5a2b;
+    color: #f8f5f2;
+}
+
+/* الروابط في القائمة */
+a {
+    text-decoration: none; 
+}
+
+/* التنسيق للشاشات الصغيرة */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .header-content {
+        text-align: center;
+    }
+    
+    .احمد_ال_حمدان {
+        border-right: none;
+        border-bottom: 5px solid #ffdea0;
+        text-align: right;
+    }
+    
+    .container ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container li {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,487 @@
+/* إعداد التنسيقات الأساسية لكل العناصر */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Aref Ruqaa", serif; 
+}
+
+/* إعداد خصائص الصفحة الرئيسية */
+body {
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+/*  خلفية الواجهة الرئيسية */
+.container {
+    background: linear-gradient(270deg, white 70%, #ffdea0 37%); /* تدرج لوني للخلفية */
+}
+
+.navheader {
+    display: flex; 
+    justify-content: right;
+}
+
+/*  قائمة التنقل */
+.navheader ul {
+    list-style: none; 
+    display: flex; 
+    align-items: center; 
+}
+
+header {
+    margin-right: 350px; 
+    display: flex; 
+}
+
+/*  عناصر قائمة التنقل */
+.navheader ul li {
+    padding: 10px; 
+}
+
+/*  خصائص الصورة في الهيدر */
+header img {
+    width: 35%;
+    height: 80%; 
+    padding-top: 20px; 
+}
+
+.Search {
+    width: 35%; 
+    min-width: 250px; 
+    max-width: 400px; 
+    height: 55px; 
+    padding: 1%; 
+    margin-top: 9%; 
+    margin-left: -2%;
+    direction: rtl; 
+}
+
+/*  خصائص فورم البحث */
+form {
+    border-radius: 25px; 
+    position: relative; 
+}
+
+input {
+    width: 100%; 
+    height: 100%; 
+    display: inline-block;
+    border-radius: 25px; 
+    border: none; 
+    padding-top: 8px 40px 8px 20px; 
+    box-shadow: 0 6px 12px -1px #050405; 
+    font-size: 16px; 
+    text-align: start; 
+    padding-right: 15px; 
+}
+
+input :focus {
+    outline: none;
+}
+
+button {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 50px; 
+    height: 100%; 
+    border-radius: 50%;
+    cursor: pointer; 
+    border: none; 
+    background: none; 
+    font-size: 18px; 
+}
+
+/* تنسيقات القسم الرئيسي بالواجهة الامامية */
+main {
+    display: flex; 
+}
+
+.Book {
+    position: relative; 
+}
+
+.Book img {
+    position: top; 
+    top: 20%; 
+    left: 10%; 
+    width: 100%;
+    height: auto; 
+    padding-left: 110px;
+    margin-bottom: 200px; 
+    padding-right: 150px;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    line-height: 7px;  
+    white-space: 15px;    
+}
+
+/* إعداد النصوص داخل القسم الرئيسي */
+main p { 
+    font-family: "Aref Ruqaa", serif; 
+    font-weight: 1000; 
+    font-style: normal; 
+    font-size: 35px; 
+    direction: rtl; 
+    text-align: center;
+    margin-top: 150px; 
+    justify-content: right; 
+    padding-right: 10px;
+}
+
+/* عناصر القائمة الرئيسية */
+nav ul li {
+    list-style: none; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    padding: 8px 16px; 
+    width: auto; 
+    border: none;
+    margin: 5%; 
+}
+
+nav ul {
+    gap: 50px; 
+}
+
+nav {
+    direction: rtl; 
+}
+
+/*  الروابط داخل القائمة */
+nav a {
+    text-decoration: none; 
+    color: #050405; 
+}
+
+nav ul > li a:hover {
+    color: #8b5a2b; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+}
+
+/* القائمة الفرعية */
+.menu {
+    display: none; 
+    position: absolute; 
+    padding: 10px; 
+    min-width: 150px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    top: 70px; 
+}
+
+/* عرض القائمة الفرعية عند تمرير الفأرة */
+nav ul li:hover .menu {
+    display: block; 
+}
+
+/*  قائمة عناصر القائمة الفرعية */
+.menu ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 3px; 
+}
+
+/*  عناصر القائمة داخل القائمة الفرعية */
+.menu ul li {
+    padding: 10px; 
+    border-bottom: 1px solid #050405; 
+}
+
+/*  قائمة العناصر الفرعية داخل القوائم */
+nav ul li ul li {
+    display: flex; 
+    flex-direction: column; 
+    z-index: 999; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+
+/* قسم الكتب في الصفحة الرئيسية */
+section {
+    margin: 100px auto; 
+    width: 100%; 
+    max-width: 1200px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    align-items: flex-start; 
+}
+
+article {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out; 
+    margin: 10px; 
+    padding: 5px; 
+    width: calc(30% - 20px); 
+    box-sizing: border-box; 
+    text-align: center; 
+}
+
+article h3 {
+    font-size: 20px; 
+    margin: 10px 0 0 0; 
+}
+
+figure {
+    margin: 0; 
+}
+
+img {
+    width: 200px; 
+    height: 250px; 
+    padding: 10px; 
+    border-radius: 8px; 
+}
+
+figcaption {
+    margin-top: 5px; 
+    padding-bottom: 10px; 
+}
+
+article a {
+    text-decoration: none; 
+    color: #050405; 
+}
+
+section :hover {
+    transform: translateY(-5px);
+}
+
+article a:hover { 
+    color: #8b5a2b; 
+}
+
+footer {
+    background-color: white; 
+    color: #050405; 
+    border-top: #050405; 
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative; 
+}
+
+footer a {
+    color: #050405; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+.important-links a:hover {
+    color: #8b5a2b; 
+}
+
+.footer_quote {
+    border-top: 2px solid #736866; 
+    padding-top: 50px; 
+    font-size: 50px; 
+}
+
+.important-links {
+    font-size: 25px; 
+    font-weight: 400; 
+    font-style: normal; 
+    padding-top: 80px; 
+}
+
+.social-icons {
+    padding-top: 20px; 
+    transform: scale(2); 
+}
+
+.social-icons :hover {
+    color: #8b5a2b;
+}
+
+/* إعدادات لشاشات العرض الأصغر من 992px */
+@media (max-width: 992px) {
+    .container {
+        background: linear-gradient(270deg, white 60%, #ffdea0 40%);
+    }
+    
+    header {
+        margin-right: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navheader {
+        justify-content: center;
+    }
+    
+    header img {
+        width: 50%;
+        padding-top: 10px;
+    }
+    
+    .Search {
+        margin-top: 5%;
+        margin-left: 0;
+    }
+    
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    main p {
+        font-size: 28px;
+        margin-top: 50px;
+        padding-right: 0;
+    }
+    
+    .Book img {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    nav ul li {
+        margin: 2%;
+    }
+    
+    .menu {
+        top: 50px;
+    }
+    
+    section {
+        margin: 50px auto;
+    }
+    
+    article {
+        width: calc(45% - 20px);
+    }
+    
+    .footer_quote {
+        font-size: 30px;
+    }
+    
+    .important-links {
+        font-size: 20px;
+        padding-top: 40px;
+    }
+}
+
+/* إعدادات لشاشات العرض الأصغر من 768px */
+@media (max-width: 768px) {
+    .container {
+        background: linear-gradient(270deg, white 50%, #ffdea0 50%);
+    }
+    
+    header {
+        margin-right: 0;
+    }
+    
+    header img {
+        width: 60%;
+    }
+    
+    .Search {
+        min-width: 200px;
+        height: 45px;
+    }
+    
+    main p {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+    
+    article {
+        width: calc(50% - 20px);
+    }
+    
+    img {
+        width: 150px;
+        height: 200px;
+    }
+    
+    .footer_quote {
+        font-size: 25px;
+        padding-top: 30px;
+    }
+    
+    .important-links {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+    
+    .social-icons {
+        transform: scale(1.5);
+    }
+}
+
+/* إعدادات لشاشات العرض الأصغر من 480px */
+@media (max-width: 480px) {
+    .container {
+        background: white;
+    }
+    
+    header img {
+        width: 80%;
+    }
+    
+    .navheader ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .Search {
+        width: 90%;
+    }
+    
+    main p {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .Book img {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    article {
+        width: 90%;
+    }
+    
+    .footer_quote {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    
+    .important-links {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    
+    .social-icons {
+        transform: scale(1.2);
+    }
+}
